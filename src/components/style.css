@@ -1,0 +1,122 @@
+.pro{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: black; */
+background-image: url("https://png.pngtree.com/background/20210712/original/pngtree-medical-medical-equipment-blue-background-picture-image_1174410.jpg");
+    color: aliceblue;
+    background-size:cover;
+}
+
+
+.table{
+    display: flex;
+    width: 90vw;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+
+}
+/* .table .t2{
+    display: flex;
+    flex-direction: column;
+} */
+
+/* Style for the outer table */
+
+@media screen and (min-width: 600px) {
+    .t2{
+    display: none;
+  }
+  .t1{
+    display: flex;
+  }
+  .t1  table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    /* Style for column headings */
+   .t1 th {
+      background-color: inherit;
+      border: 1px solid #b80a0a;
+      color: #b80a0a;
+      text-align: center;
+      padding: 8px;
+      width: 10vw; /* Each column takes 10vw width */
+      height: 1vw; /* Column heading height matches width */
+    }
+    
+    /* Style for table cells */
+   .t1 td {
+      border: 1px solid #0a1fe2;
+      color: #0a1fe2;
+      text-align: center;
+      padding: 8px;
+    }
+    
+    /* Style for nested tables (subheadings) */
+   .t1 table table th {
+      background-color: black;
+      padding: 5px;
+      border-color: aquamarine;
+    }
+    
+    /* Style for nested table cells (subvalues) */
+   .t1 table table td {
+      border: none;
+      padding: 5px;
+    }
+  }
+ 
+  @media screen and (max-width:600px) {
+    .t1{
+        display: none;
+    }
+    .t2{
+        display: flex;
+      }
+    .vertical-table {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .row {
+        border: 1px solid #ef0909;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10vhpx;
+        color: rgb(54, 42, 165);
+      }
+      
+      .heading {
+        flex-basis: 40%;
+      }
+      
+      .data {
+        flex-basis: 60%;
+        color: green;
+        /* align-items:end; */
+      }
+      
+      .row {
+        background-color:inherit;
+      }
+      
+      .row:hover {
+        background-color: #25e431;
+      }
+      
+  }
+.bar{
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
